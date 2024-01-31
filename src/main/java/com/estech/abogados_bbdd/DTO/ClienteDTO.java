@@ -2,19 +2,17 @@ package com.estech.abogados_bbdd.DTO;
 
 public class ClienteDTO {
     
-    private Long id;
     private String nombreCliente;
     private String apellidoCliente;
+    private AbogadoDTO abogado;
     
     public ClienteDTO() {
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public ClienteDTO(String nombreCliente, String apellidoCliente, AbogadoDTO abogado) {
+        this.nombreCliente = nombreCliente;
+        this.apellidoCliente = apellidoCliente;
+        this.abogado = abogado;
     }
 
     public String getNombreCliente() {
@@ -33,6 +31,17 @@ public class ClienteDTO {
         this.apellidoCliente = apellidoCliente;
     }
 
+    public AbogadoDTO getAbogado() {
+        return abogado;
+    }
+
+    public void setAbogado(AbogadoDTO abogado) {
+        this.abogado = abogado;
+    }
+
+    
+    
+    
     
 
 }
